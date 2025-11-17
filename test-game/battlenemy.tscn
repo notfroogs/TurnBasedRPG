@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bku1eb78is4ju"]
+
+[ext_resource type="Texture2D" uid="uid://dhyotdhpyqxal" path="res://images/placeholder 2.png" id="1_8f7p5"]
+
+[node name="battlenemy" type="TextureButton"]
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 33.0
+offset_bottom = 34.0
+texture_normal = ExtResource("1_8f7p5")
+flip_h = true

@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=3 uid="uid://dta1saok65q4n"]
+
+[ext_resource type="Theme" uid="uid://dcqgq7ufw0vq0" path="res://default theme.tres" id="1_353sp"]
+[ext_resource type="Texture2D" uid="uid://1vsa8jdeblgs" path="res://images/ninepatch.png" id="1_fkq31"]
+[ext_resource type="Script" path="res://WindowDefault.gd" id="2_p8bqm"]
+[ext_resource type="Script" path="res://optionss.gd" id="3_rygdp"]
+
+[node name="options" type="NinePatchRect"]
+custom_minimum_size = Vector2(48, 48)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -105.0
+offset_top = -64.0
+offset_right = -28.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+theme = ExtResource("1_353sp")
+texture = ExtResource("1_fkq31")
+region_rect = Rect2(2, 2, 44, 44)
+patch_margin_left = 32
+patch_margin_top = 32
+patch_margin_right = 32
+patch_margin_bottom = 32
+script = ExtResource("2_p8bqm")
+
+[node name="optionss" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(64, 54)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -27.0
+offset_right = 32.0
+offset_bottom = 27.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 4
+script = ExtResource("3_rygdp")
+
+[node name="Button" type="Button" parent="optionss"]
+layout_mode = 2
+text = "ATTACK"
+
+[node name="Button2" type="Button" parent="optionss"]
+layout_mode = 2
+text = "ITEM"
+
+[node name="Button3" type="Button" parent="optionss"]
+layout_mode = 2
+text = "GUARD"
+
+[node name="Button4" type="Button" parent="optionss"]
+layout_mode = 2
+text = "MAGIC"

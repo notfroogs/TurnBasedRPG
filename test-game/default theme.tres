@@ -1,0 +1,29 @@
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://dcqgq7ufw0vq0"]
+
+[ext_resource type="FontFile" uid="uid://dc7rwl8sh168f" path="res://fonts/PixelOperator8.ttf" id="1_m5ohl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l3q0a"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cao6x"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a08l8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e2dpv"]
+content_margin_left = 1.0
+content_margin_top = 1.0
+content_margin_right = 1.0
+content_margin_bottom = 1.0
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rgxe3"]
+
+[resource]
+Button/font_sizes/font_size = 8
+Button/fonts/font = ExtResource("1_m5ohl")
+Button/styles/disabled = SubResource("StyleBoxFlat_l3q0a")
+Button/styles/focus = SubResource("StyleBoxFlat_cao6x")
+Button/styles/hover = SubResource("StyleBoxFlat_a08l8")
+Button/styles/normal = SubResource("StyleBoxFlat_e2dpv")
+Button/styles/pressed = SubResource("StyleBoxFlat_rgxe3")
+HBoxContainer/constants/separation = 3

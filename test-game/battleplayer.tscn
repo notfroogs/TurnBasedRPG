@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cipa8cx2rid8f"]
+
+[ext_resource type="Texture2D" uid="uid://dkoh12let3k7e" path="res://images/placeholders.png" id="1_yd3dx"]
+
+[node name="battleplayer" type="TextureButton"]
+offset_right = 32.0
+offset_bottom = 32.0
+texture_normal = ExtResource("1_yd3dx")
