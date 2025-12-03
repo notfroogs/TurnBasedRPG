@@ -2,11 +2,11 @@
 
 [ext_resource type="Theme" uid="uid://dcqgq7ufw0vq0" path="res://default theme.tres" id="1_21ob4"]
 [ext_resource type="Texture2D" uid="uid://1vsa8jdeblgs" path="res://images/ninepatch.png" id="1_lknms"]
-[ext_resource type="Script" path="res://Scene/battle.gd" id="2_7viys"]
+[ext_resource type="Script" uid="uid://dv8vyawt00pfl" path="res://Scene/battle.gd" id="2_7viys"]
 [ext_resource type="PackedScene" uid="uid://cipa8cx2rid8f" path="res://battleplayer.tscn" id="3_e7ta3"]
 [ext_resource type="PackedScene" uid="uid://bku1eb78is4ju" path="res://battlenemy.tscn" id="4_8n1hc"]
-[ext_resource type="Script" path="res://WindowDefault.gd" id="4_ohs47"]
-[ext_resource type="Script" path="res://optionss.gd" id="5_j4lxd"]
+[ext_resource type="Script" uid="uid://bntlqhev80105" path="res://WindowDefault.gd" id="4_ohs47"]
+[ext_resource type="Script" uid="uid://cgngmh8upvt5a" path="res://menu.gd" id="5_j4lxd"]
 
 [node name="Battle" type="Control"]
 layout_mode = 3
@@ -181,3 +181,6 @@ offset_left = 48.0
 offset_top = 68.0
 offset_right = 80.0
 offset_bottom = 100.0
+
+[connection signal="button_focused" from="options/optionss" to="." method="_on_optionss_button_focused"]
+[connection signal="button_pressed" from="options/optionss" to="." method="_on_optionss_button_pressed"]
