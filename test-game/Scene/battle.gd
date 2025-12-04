@@ -10,6 +10,6 @@ func _ready() -> void:
 
 
 func _on_optionss_button_focused(button: BaseButton) -> void:
-	pass # Replace with function body. 
+	print(button.text)
 func _on_optionss_button_pressed(button: BaseButton) -> void:
 	print(button.text)

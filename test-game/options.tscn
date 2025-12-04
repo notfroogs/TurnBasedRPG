@@ -2,8 +2,8 @@
 
 [ext_resource type="Theme" uid="uid://dcqgq7ufw0vq0" path="res://default theme.tres" id="1_353sp"]
 [ext_resource type="Texture2D" uid="uid://1vsa8jdeblgs" path="res://images/ninepatch.png" id="1_fkq31"]
-[ext_resource type="Script" uid="uid://bntlqhev80105" path="res://WindowDefault.gd" id="2_p8bqm"]
-[ext_resource type="Script" uid="uid://cgngmh8upvt5a" path="res://menu.gd" id="3_rygdp"]
+[ext_resource type="Script" path="res://WindowDefault.gd" id="2_p8bqm"]
+[ext_resource type="Script" path="res://menu.gd" id="3_rygdp"]
 
 [node name="options" type="NinePatchRect"]
 custom_minimum_size = Vector2(48, 48)
