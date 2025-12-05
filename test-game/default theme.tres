@@ -1,6 +1,7 @@
-[gd_resource type="Theme" load_steps=7 format=3 uid="uid://dcqgq7ufw0vq0"]
+[gd_resource type="Theme" load_steps=11 format=3 uid="uid://dcqgq7ufw0vq0"]
 
 [ext_resource type="FontFile" uid="uid://dc7rwl8sh168f" path="res://fonts/PixelOperator8.ttf" id="1_m5ohl"]
+[ext_resource type="FontFile" uid="uid://db36lm6sqv5xn" path="res://fonts/PixelOperator8-Bold.ttf" id="1_txhud"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l3q0a"]
 bg_color = Color(1, 1, 1, 1)
@@ -18,12 +19,35 @@ bg_color = Color(0, 0, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rgxe3"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g1tu5"]
+bg_color = Color(0.011030235, 0.0029962834, 0.009761608, 1)
+expand_margin_left = 1.0
+expand_margin_top = 1.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_txhud"]
+bg_color = Color(0.6727532, 0.67275095, 0.6727514, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_psgx5"]
+bg_color = Color(0.2676767, 0.8162714, 0.22865117, 1)
+
 [resource]
 Button/font_sizes/font_size = 8
-Button/fonts/font = ExtResource("1_m5ohl")
+Button/fonts/font = ExtResource("1_txhud")
 Button/styles/disabled = SubResource("StyleBoxFlat_l3q0a")
 Button/styles/focus = SubResource("StyleBoxFlat_cao6x")
 Button/styles/hover = SubResource("StyleBoxFlat_a08l8")
 Button/styles/normal = SubResource("StyleBoxFlat_e2dpv")
 Button/styles/pressed = SubResource("StyleBoxFlat_rgxe3")
 HBoxContainer/constants/separation = 3
+Label/font_sizes/font_size = 8
+Label/fonts/font = ExtResource("1_m5ohl")
+Label/styles/normal = SubResource("StyleBoxFlat_g1tu5")
+MarginContainer/constants/margin_bottom = 6
+MarginContainer/constants/margin_left = 6
+MarginContainer/constants/margin_right = 6
+MarginContainer/constants/margin_top = 6
+ProgressBar/font_sizes/font_size = 8
+ProgressBar/styles/background = SubResource("StyleBoxFlat_txhud")
+ProgressBar/styles/fill = SubResource("StyleBoxFlat_psgx5")
