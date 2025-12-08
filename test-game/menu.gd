@@ -27,7 +27,7 @@ func button_focus(n:int=index)->void:
 	button.grab_focus()
 
 func _on_Button_focus_exited(button:BaseButton)->void:
-	await get_tree().process_frame
+	#await get_tree().process_frame
 	if not get_viewport().gui_get_focus_owner() in get_buttons():
 		print("bring focus back")
 		button.grab_focus()

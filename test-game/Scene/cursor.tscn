@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://ccxgslscdrwwt"]
+
+[ext_resource type="Texture2D" uid="uid://wdwltq5cyors" path="res://images/pointer.png" id="1_h5dal"]
+
+[node name="MenuCursor" type="TextureRect"]
+anchors_preset = -1
+anchor_right = 0.05
+anchor_bottom = 0.08888889
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_h5dal")
+stretch_mode = 2
+metadata/_edit_use_anchors_ = true

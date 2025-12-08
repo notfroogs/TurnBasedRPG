@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cxakp6vk0j7qi"]
+[gd_scene load_steps=10 format=3 uid="uid://cxakp6vk0j7qi"]
 
 [ext_resource type="Theme" uid="uid://dcqgq7ufw0vq0" path="res://default theme.tres" id="1_21ob4"]
 [ext_resource type="Texture2D" uid="uid://1vsa8jdeblgs" path="res://images/ninepatch.png" id="1_lknms"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://bntlqhev80105" path="res://WindowDefault.gd" id="4_ohs47"]
 [ext_resource type="PackedScene" uid="uid://7yp7md8wpssk" path="res://Scene/battle_player_bar.tscn" id="4_wcqvn"]
 [ext_resource type="Script" uid="uid://cgngmh8upvt5a" path="res://menu.gd" id="5_j4lxd"]
+[ext_resource type="PackedScene" uid="uid://sxg3ej8rp1s3" path="res://Scene/menu_cursor2.tscn" id="9_7bk8s"]
 
 [node name="Battle" type="Control"]
 layout_mode = 3
@@ -198,9 +199,9 @@ layout_mode = 2
 [node name="options" type="NinePatchRect" parent="."]
 custom_minimum_size = Vector2(48, 48)
 layout_mode = 0
-offset_left = 52.0
+offset_left = 62.0
 offset_top = 110.0
-offset_right = 116.0
+offset_right = 126.0
 offset_bottom = 174.0
 size_flags_horizontal = 0
 size_flags_vertical = 8
@@ -230,19 +231,36 @@ script = ExtResource("5_j4lxd")
 
 [node name="Button" type="Button" parent="options/optionss"]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
 text = "ATTACK"
 
 [node name="Button2" type="Button" parent="options/optionss"]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
 text = "ITEM"
 
 [node name="Button3" type="Button" parent="options/optionss"]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
 text = "GUARD"
 
 [node name="Button4" type="Button" parent="options/optionss"]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
 text = "MAGIC"
+
+[node name="MenuCursor" parent="." instance=ExtResource("9_7bk8s")]
+layout_mode = 1
+anchor_left = 0.15625
+anchor_top = 0.57222223
+anchor_right = 0.20625
+anchor_bottom = 0.6611111
+grow_horizontal = 1
+grow_vertical = 1
 
 [connection signal="button_focused" from="options/optionss" to="." method="_on_optionss_button_focused"]
 [connection signal="button_pressed" from="options/optionss" to="." method="_on_optionss_button_pressed"]
