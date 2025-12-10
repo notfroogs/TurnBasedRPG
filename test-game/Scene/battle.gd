@@ -33,3 +33,4 @@ func _on_optionss_button_pressed(button: BaseButton)  -> void:
 		"ATTACK":
 			state = States.TARGETS
 			_enemies_menu.button_focus()
+#Press attack to move cursor to the enemies, press esc to go back to the options

@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://7yp7md8wpssk"]
+[gd_scene load_steps=2 format=3 uid="uid://7yp7md8wpssk"]
+
+[ext_resource type="PackedScene" uid="uid://jsu3t17ilugg" path="res://Scene/atbBar.tscn" id="1_pk4q0"]
 
 [node name="BattlePlayerBar" type="HBoxContainer"]
 offset_right = 258.0
@@ -17,10 +19,5 @@ text = "999"
 layout_mode = 2
 text = "999"
 
-[node name="ProgressBar" type="ProgressBar" parent="."]
-custom_minimum_size = Vector2(32, 6)
+[node name="ATBbar" parent="." instance=ExtResource("1_pk4q0")]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 1
-value = 50.0
-show_percentage = false
