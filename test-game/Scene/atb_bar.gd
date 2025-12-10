@@ -10,7 +10,4 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	value += SPEED_BASE
-
-
-func _on_value_changed(value: float) -> void:
-	pass # Replace with function body.
+	
