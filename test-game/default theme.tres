@@ -30,7 +30,8 @@ expand_margin_bottom = 1.0
 bg_color = Color(0.6727532, 0.67275095, 0.6727514, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_psgx5"]
-bg_color = Color(0.2676767, 0.8162714, 0.22865117, 1)
+resource_local_to_scene = true
+bg_color = Color(1, 1, 1, 1)
 
 [resource]
 Button/font_sizes/font_size = 8

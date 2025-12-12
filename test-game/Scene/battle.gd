@@ -9,12 +9,17 @@ enum States{
 @onready var _options: WindowDefault = $options
 @onready var _options_menu: Menu = $options/optionss
 @onready var _enemies_menu: Menu = $enemies
-
+@onready var _players_menu: Menu= $Players
+@onready var _players_info:Array=$GUIMargin/bottom/Players/MarginContainer/VBoxContainer.get_children()
 var state: States = States.OPTIONS
+var atb_queue: Array=[]
+var event_queue: Array=[]
 
 func _ready() -> void:
-	_options_menu.button_focus(0)
-
+	_options.hide()
+	for player in _players_info:
+		player.atb_ready.connect(_on_players_atb_ready.bind(player))
+		
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
 		match state:
@@ -34,3 +39,10 @@ func _on_optionss_button_pressed(button: BaseButton)  -> void:
 			state = States.TARGETS
 			_enemies_menu.button_focus()
 #Press attack to move cursor to the enemies, press esc to go back to the options
+func _on_players_atb_ready(player:BattlePlayerBar):
+	
+	if atb_queue.is_empty():
+		player.highlight(true)
+		_options.show()
+		_options_menu.button_focus(0)
+	atb_queue.append(player)

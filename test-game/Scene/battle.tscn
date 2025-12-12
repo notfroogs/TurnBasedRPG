@@ -162,7 +162,7 @@ text = "Enemy"
 layout_mode = 2
 text = "Enemy"
 
-[node name="player" type="NinePatchRect" parent="GUIMargin/bottom"]
+[node name="Players" type="NinePatchRect" parent="GUIMargin/bottom"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 1.6
@@ -173,7 +173,7 @@ patch_margin_top = 32
 patch_margin_right = 32
 patch_margin_bottom = 32
 
-[node name="MarginContainer" type="MarginContainer" parent="GUIMargin/bottom/player"]
+[node name="MarginContainer" type="MarginContainer" parent="GUIMargin/bottom/Players"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -181,20 +181,20 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="GUIMargin/bottom/player/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="GUIMargin/bottom/Players/MarginContainer"]
 layout_mode = 2
 theme_override_constants/separation = 6
 
-[node name="BattlePlayerBar" parent="GUIMargin/bottom/player/MarginContainer/VBoxContainer" instance=ExtResource("4_wcqvn")]
+[node name="BattlePlayerBar" parent="GUIMargin/bottom/Players/MarginContainer/VBoxContainer" instance=ExtResource("4_wcqvn")]
 layout_mode = 2
 
-[node name="BattlePlayerBar2" parent="GUIMargin/bottom/player/MarginContainer/VBoxContainer" instance=ExtResource("4_wcqvn")]
+[node name="BattlePlayerBar2" parent="GUIMargin/bottom/Players/MarginContainer/VBoxContainer" instance=ExtResource("4_wcqvn")]
 layout_mode = 2
 
-[node name="BattlePlayerBar3" parent="GUIMargin/bottom/player/MarginContainer/VBoxContainer" instance=ExtResource("4_wcqvn")]
+[node name="BattlePlayerBar3" parent="GUIMargin/bottom/Players/MarginContainer/VBoxContainer" instance=ExtResource("4_wcqvn")]
 layout_mode = 2
 
-[node name="BattlePlayerBar4" parent="GUIMargin/bottom/player/MarginContainer/VBoxContainer" instance=ExtResource("4_wcqvn")]
+[node name="BattlePlayerBar4" parent="GUIMargin/bottom/Players/MarginContainer/VBoxContainer" instance=ExtResource("4_wcqvn")]
 layout_mode = 2
 
 [node name="options" type="NinePatchRect" parent="."]

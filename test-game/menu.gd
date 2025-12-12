@@ -5,8 +5,10 @@ class_name Menu extends Control
 signal button_focused(button: BaseButton)
 signal button_pressed(button: BaseButton)
 var index: int = 0
-
+var exiting: bool = false
 func _ready() -> void:
+	tree_exiting.connect(_on_tree_exiting)
+	
 	for button in get_buttons():
 		button.focus_exited.connect(_on_Button_focus_exited.bind(button))
 		button.focus_entered.connect(_on_Button_focused.bind(button))
@@ -34,6 +36,8 @@ func button_focus(n:int=index)->void:
 
 func _on_Button_focus_exited(button:BaseButton)->void:
 	await get_tree().process_frame 
+	if exiting:
+		return
 	if not get_viewport().gui_get_focus_owner() in get_buttons():
 		button_enable_focus(false)
 	##await get_tree().process_frame
@@ -48,3 +52,5 @@ func _on_Button_focused(button:BaseButton)->void:
 	
 func _on_Button_pressed(button: BaseButton)->void:
 	emit_signal("button_pressed",button)
+func _on_tree_exiting()->void:
+	exiting = true
