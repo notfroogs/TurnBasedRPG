@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1vsa8jdeblgs"
-path="res://.godot/imported/ninepatch.png-fd98278dd3c613cda716eb77245800d7.ctex"
+uid="uid://c1alr2vupas8n"
+path="res://.godot/imported/Fairy.png-c5b1300285b1820f6f8166c62c9da9ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/ninepatch.png"
-dest_files=["res://.godot/imported/ninepatch.png-fd98278dd3c613cda716eb77245800d7.ctex"]
+source_file="res://images/enemies/Fairy.png"
+dest_files=["res://.godot/imported/Fairy.png-c5b1300285b1820f6f8166c62c9da9ed.ctex"]
 
 [params]
 

@@ -20,14 +20,14 @@ bg_color = Color(0, 0, 0, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rgxe3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g1tu5"]
-bg_color = Color(0.011030235, 0.0029962834, 0.009761608, 1)
+bg_color = Color(0.0110302, 0.00299628, 0.00976161, 1)
 expand_margin_left = 1.0
 expand_margin_top = 1.0
 expand_margin_right = 1.0
 expand_margin_bottom = 1.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_txhud"]
-bg_color = Color(0.6727532, 0.67275095, 0.6727514, 1)
+bg_color = Color(0.672753, 0.672751, 0.672751, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_psgx5"]
 resource_local_to_scene = true
