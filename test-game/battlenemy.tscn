@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bku1eb78is4ju"]
 
-[ext_resource type="Texture2D" uid="uid://dhyotdhpyqxal" path="res://images/placeholder 2.png" id="1_8f7p5"]
+[ext_resource type="Texture2D" uid="uid://dhyotdhpyqxal" path="res://images/enemies/Shadow.png" id="1_8f7p5"]
 [ext_resource type="PackedScene" uid="uid://jsu3t17ilugg" path="res://Scene/atbBar.tscn" id="2_4m11p"]
 [ext_resource type="Script" uid="uid://csffgy60g4sf5" path="res://battlenemy.gd" id="2_g52t2"]
 
