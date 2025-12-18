@@ -41,7 +41,7 @@ static func audio_play_varied_pitch_2d(node: AudioStreamPlayer2D, base_range: fl
 	var base: float = 1.0
 	node.pitch_scale= randf_range(base-base_range, base +base_range)
 	node.play()
-static func set_names_to_keys(dict: Dictionary)-> void:
+static func set_keys_to_names(dict: Dictionary)-> void:
 	var keys : Array = dict.keys()
 	if dict[keys[0]] is RefCounted:
 		for key in keys:

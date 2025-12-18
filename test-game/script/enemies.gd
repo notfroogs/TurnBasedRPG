@@ -7,4 +7,4 @@ var data: Dictionary ={
 
 
 func init()-> void:
-	pass
+	Util.set_keys_to_names
