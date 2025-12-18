@@ -91,6 +91,7 @@ static func get_surrounding_cells(cell:Vector2,length: int= 3) -> Array:
 				continue
 			surrounding_cells.append(target_cell)
 	return surrounding_cells
+
 static func get_four_directions() -> Array:
 	return [Vector2.UP,Vector2.DOWN, Vector2.RIGHT, Vector2.LEFT]
 static func get_surrounding_cells_four_dir(cell: Vector2) ->Array:
